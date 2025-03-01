@@ -1,11 +1,11 @@
 # MDNET: Multi-Scale Differential Transformer for Efficient Lightweight Image Classification
 **This is an official implementation of MDNET**.
 
-MDNET is a highly efficient and lightweight image classification network that eliminates the need for additional knowledge distillation. The core innovation of MDNET lies in the introduction of the Multi-Scale Differential Transformer (MDIFFormer), which integrates a multi-scale attention mechanism (MSA) and Multi-Scale Feed-Forward Network (MSFFN) to concurrently extract local information at multiple scales along the channel dimension. This design not only enhances the ability of the model to capture multi-scale features while maintaining extremely low computational complexity and parameters, but also helps to understand the global context more comprehensively. Furthermore, we introduce for the first time the Differential Attention Mechanism (DIFFA), inspired by the differential amplifier circuit in physics, into the domain of image processing. This mechanism emphasizes more meaningful interactions between elements in the sequence, thereby prioritizing important inputs while minimizing common-mode attention noise from irrelevant contexts. Additionally, by introducing a penalization term on the probability distribution, we further incorporate uniform noise, which strengthens the robustness of the model and reduces attention noise.
+MDNET is a highly efficient and lightweight image classification network that eliminates the need for post-training additional model compression. The core innovation of MDNET lies in the introduction of the Multi-Scale Differential Transformer (MDIFFormer), which integrates a multi-scale attention mechanism (MSA) and Multi-Scale Feed-Forward Network (MSFFN) to concurrently extract local information at multiple scales along the channel dimension. This design not only enhances the ability of the model to capture multi-scale features while maintaining extremely low computational complexity and parameters, but also helps to understand the global context more comprehensively. Furthermore, we introduce for the first time the Differential Attention Mechanism (DIFFA), inspired by the differential amplifier circuit in physics, into the domain of image processing. This mechanism emphasizes more meaningful interactions between elements in the sequence, thereby prioritizing important inputs while minimizing common-mode attention noise from irrelevant contexts. Additionally, by introducing a penalization term on the probability distribution, we further incorporate uniform noise, which strengthens the robustness of the model and reduces attention noise.
 
 ## Highlights
 - **Denoising**: Inspired by differential amplifiers, we pioneer a differential attention mechanism to reduce attention noise and highlight key inputs.
-- **Competitive performance**: MDNET achieves a balance between performance and parameters, consistently outperforming state-of-the-art lightweight networks without requiring additional knowledge distillation.
+- **Competitive performance**: MDNET achieves a balance between performance and parameters, consistently outperforming state-of-the-art lightweight networks without requiring additional model compression.
 - **Enhanced Attention**：Multi-scale information improves the extraction of both local and global context.
 
 ## Environment Setup
@@ -45,7 +45,7 @@ Some visualization effects of MDNET are as follows：
 ![Example Image](images/visualization.png)
 
 ## Contact
-MDNET is maintained by the State Key Laboratory forRobotics and Systems, Harbin Institute of Technology. If you have any questions, please feel free to contact us via email: Jinghan Gao, Sijia Liu and Tao Xie.
+MDNET is maintained by the State Key Laboratory for Robotics and Systems, Harbin Institute of Technology. If you have any questions, please feel free to contact us via email: Jinghan Gao, Sijia Liu and Tao Xie.
 
 ## Additional Notes
 We do not plan to release the new energy battery pack dataset NEBP because the dataset comes from the production line of the enterprise.
