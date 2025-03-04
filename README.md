@@ -18,7 +18,7 @@ To set up the environment you can easily run the following command:
 ### Create and activate environment
 
 ```
-   git clone https://github.com/Gaojinghan1/MDNET.git
+   git clone https://github.com/gaojinghan-hit/MDNET.git
    cd MDNET
    conda create -n mdnet python=3.8
    conda activate mdnet
